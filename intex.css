@@ -65,7 +65,10 @@ p {
 display: flex;
 justify-content: space-between;
 }
-
+.gif{
+    width=100%;
+    height=100%;
+}
 @media (min-width: 768px) {
     .row {
       display: flex;
