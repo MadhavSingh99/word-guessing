@@ -72,8 +72,8 @@ justify-content: space-between;
     justify-items: center;
 }
 img{
-    width: 10rem;
-    height: 12rem;
+    width: 12rem;
+    height: 16rem;
 }
 @media (min-width: 768px) {
     .row {
