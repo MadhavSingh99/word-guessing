@@ -24,9 +24,6 @@ function setup() {
     // reset the variables 
     numGuessesRemaining = maxNumGuesses;
     guessedLetters = [];
-
-    //clears giphy-embed to now show any gifs
-    document.getElementById("giphy-embed").src = "";
     //removes color from numGuesses
     document.getElementById("numGuesses").style.color = "";
 
