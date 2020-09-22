@@ -110,7 +110,7 @@ function isWinner() {
             document.getElementById("giphy-embed").src = "https://i.pinimg.com/originals/0c/bf/de/0cbfde26475f81ade45ee0d8d63ed6f8.jpg";
         } else if (ansWord === "DHARMENDRA") {
             document.querySelector("img").style.display = "block";
-            document.getElementById("giphy-embed").src = "https://i.pinimg.com/originals/e9/b0/27/e9b02736600b9f5465acdb370f6e8795.jpg";
+            document.getElementById("giphy-embed").src = "https://upperstall.com/wp-content/uploads/2015/12/dharmendra-wallpaper.jpg";
         } else if (ansWord === "SHAHRUKH") {
             document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://static.toiimg.com/thumb/msid-69633629,width-800,height-600,resizemode-75,imgsize-154977,pt-32,y_pad-40/69633629.jpg";
