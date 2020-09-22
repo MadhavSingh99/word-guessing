@@ -13,6 +13,7 @@ var ansWord; // the word that is being played
 
 // function runs at the start of page and used to restart after game isFinished
 function setup() {
+    document.querySelector("img").style.display = "none";
     //picks random word from words list
     ansWord = words[Math.floor(Math.random() * words.length)];
 
@@ -24,6 +25,9 @@ function setup() {
     // reset the variables 
     numGuessesRemaining = maxNumGuesses;
     guessedLetters = [];
+
+    //clears giphy-embed to now show any gifs
+    document.getElementById("giphy-embed").src = "";
     //removes color from numGuesses
     document.getElementById("numGuesses").style.color = "";
 
@@ -75,29 +79,58 @@ function isWinner() {
         numWins++;
         isFinished = true;
         //if the answer is guessed then play assigned gif
+        // if(ansWord === "DOUG") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/w7iOaLoi84N6E";
+        // } else if (ansWord === "RUGRATS") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/3x5V8j8T341lS";
+        // } else if (ansWord === "SPONGEBOB") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/TdfyKrN7HGTIY";
+        // } else if (ansWord === "POKEMON") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/xuXzcHMkuwvf2";
+        // } else if (ansWord === "ANIMANIACS") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/Vpu0dyuOVbrBC";
+        // } else if (ansWord === "RECESS") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/ENjchsyk8aSoE";
+        // } else if (ansWord === "CATDOG") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/VqWjJR7vOwmSk";
+        // } else if (ansWord === "SIMPSONS") {
+        //     document.getElementById("giphy-embed").src = "https://giphy.com/embed/tkYpAbKdWj4TS";
+        // }
         if(ansWord === "ANIL") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://in.bmscdn.com/iedb/artist/images/website/poster/large/anil-kapoor-176-12-09-2017-07-42-36.jpg?1";
         } else if (ansWord === "RISHI") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://mcmscache.epapr.in/post_images/website_350/post_16056826/full.jpg";
         } else if (ansWord === "SALMAN") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://i.pinimg.com/originals/bc/93/c2/bc93c26f13591a614ac32960157cd92e.jpg";
         } else if (ansWord === "AKSHAY") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://i.pinimg.com/originals/0c/bf/de/0cbfde26475f81ade45ee0d8d63ed6f8.jpg";
         } else if (ansWord === "DHARMENDRA") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://i.pinimg.com/originals/e9/b0/27/e9b02736600b9f5465acdb370f6e8795.jpg";
         } else if (ansWord === "SHAHRUKH") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://static.toiimg.com/thumb/msid-69633629,width-800,height-600,resizemode-75,imgsize-154977,pt-32,y_pad-40/69633629.jpg";
         } else if (ansWord === "JACKY") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://static.toiimg.com/thumb/msid-64273864,imgsize-153531,width-800,height-600,resizemode-75/64273864.jpg";
         } else if (ansWord === "SANJAY") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://i.pinimg.com/originals/ec/16/24/ec1624f3214db882ccda524e3960256d.jpg";
         }else if (ansWord === "AMITABH") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://i.ndtvimg.com/mt/2012-10/bigbndtv-big.jpg?downsize=360:*";
         }else if (ansWord === "SUNNY") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://pbs.twimg.com/media/Dtiot0mVYAAmYS6.jpg";
         }else if (ansWord === "SUNIL") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://im.indiatimes.in/content/itimes/photo/2015/Apr/12/1428860509-sunil-shetty-stylish-photos.jpg?w=570&h=712&cc=1";
         }else if (ansWord === "MITHUN") {
+            document.querySelector("img").style.display = "block";
             document.getElementById("giphy-embed").src = "https://img.pgc.in.goldenmob.com/img/0b44cf60c2b94629b417dac99ac46f5c/53573dbc819b186b4f8b52eb058207a4-400.webp";
         }
 
@@ -245,6 +278,7 @@ console.log(ansWord);
 // updateScreen();
 
 // console.log(ansWord);
+
 
 
 
